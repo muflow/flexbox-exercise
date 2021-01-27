@@ -1,0 +1,130 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    background-color: #000;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu {
+    background-color: #2d4059;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.logo {
+    background-color: #ea5455;
+    flex: 1 1 auto;    
+}
+
+.nav {
+    background-color: #ea5455;
+    flex: 5 1 auto;
+}
+
+.social {
+    background-color: #ea5455;
+    flex: 1 1 auto;
+}
+
+.texto-principal {
+    background-color: #f07b3f;
+}
+
+h1 {
+    background-color: #ffd460;
+}
+
+/* section */
+.section {
+    background-color: #000;
+    display: flex;
+}
+
+.articulos {
+    background-color: #03506f;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.article {
+    background-color: #62959c;
+    flex: 1 1 40%; /* en lugar de "auto" para crear las dos columnas (con "wrap")*/
+}
+
+.navegacion {
+    background-color: #a3ddcb;
+    flex: 1 1 100%; /* en lugar de "auto" para ocupar todo el espacio*/
+}
+
+/* aside */
+.aside {
+    background-color: #ff7b54;
+    flex: 1 1 auto;
+}
+
+.publicidad {
+    background-color: #ffb26b;
+
+}
+
+
+/* footer */
+.footer {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.pie {
+    background-color: #ffc764;
+    flex-basis: 100%;
+}
+
+/* responsive with media queries */
+
+@media all and (max-width: 800px) {
+
+    .section {
+        flex-direction: column;
+        background-color: #ffe227;
+    }
+}
+
+
+@media all and (max-width: 600px) {
+    
+    .articulos {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    .menu {
+        flex-wrap: wrap;
+    }
+    
+    .logo {
+        flex: 1 1 100%;
+    }
+
+    .nav {
+        flex: 1 1 100%;
+    }
+
+    .social {
+        flex: 1 1 100%;
+    }
+}
